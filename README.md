@@ -19,10 +19,3 @@ Run start.py (Preferably in a terminal application on a desktop.)
 
 # Tested on:
 Ubuntu 18.04 with Cinnamon Desktop
-
-# TODO:
-Make rewarder agent's reward be based on actor agent's actions instead of randomness.
-
-Improve performance of both agents.
-
-Make actor actions be independent of screen resolution.
