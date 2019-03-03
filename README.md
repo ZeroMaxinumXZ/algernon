@@ -2,6 +2,8 @@
 Unsupervised learning using TensorForce and RL-techniques to control mouse movements.
 
 # Dependencies
+TensorFlow
+
 TensorForce 
 
 pyAutoGUI
