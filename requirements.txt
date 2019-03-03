@@ -1,2 +1,4 @@
 tensorflow-gpu >= 1.10 <= 1.12
 tensorforce
+pyautogui
+pyscreenshot
