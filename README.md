@@ -8,4 +8,4 @@ pyAutoGUI
 
 Pillow
 
-pyScreenshot
+pyScreenshot (as a replacement to Pillow's ImageGrab for Linux)
