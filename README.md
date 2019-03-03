@@ -4,6 +4,8 @@ Unsupervised learning using TensorForce and RL-techniques to control mouse movem
 # Dependencies
 TensorForce 
 
-pyautogui
+pyAutoGUI
 
-pyscreenshot
+Pillow
+
+pyScreenshot
