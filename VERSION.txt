@@ -1,1 +1,8 @@
+﻿ReInfinity: Actor-Rewarder Pairing
 
+This is a documentation detailing changes to the ReInfinity repository starting from v1.0.2…
+
+v1.0.2:
+Added a Tensorforce action exploration to Rewarder. (50%. right now code will result in error if try to run...)
+More coherent file structure.
+Fixed xystoreandcheck function in utils file.
