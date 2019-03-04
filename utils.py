@@ -7,6 +7,7 @@ import json
 
 mouseX = np.array([])
 mouseY = np.array([])
+
 def screen_size():
     return 192, 108
 
@@ -28,8 +29,10 @@ def xystoreandcheck(x, y, reward):
     np.append(y, mouseY)
     if len(mouseX) > 4:
         if mouseX[-1] == mouseX[-2] or mouseX[-3] == mouseX[-1]:
-            reward = -1.11
+            reward += -10.00
+            print("Actor reward is now " + str(reward) + " due to agent failing to move mouse pointer in X coords.")
     if len(mouseY) > 4:
         if mouseY[-1] == mouseY[-2] or mouseY[-3] == mouseY[-1]:
-            reward = -1.11
+            reward += -10.00
+            print("Actor reward is now " + str(reward) + " due to agent failing to move mouse pointer in Y coords.")
     return reward

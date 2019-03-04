@@ -25,9 +25,10 @@ def main_loop(agent):
         action1 = agent.act(states=get_screen())
         action2 = agent.act(states=get_screen())
         action3 = agent.act(states=get_screen())
+        action_sum = action1 + action2 + action3
         #action4 = agent.act(states=get_screen())
         reward, x, y = actionizer(action1,action2, action3)
-        reward = smart_rewarder(reward)
+        reward = smart_rewarder(reward, action_sum)
         #rwward = object_rewarder(reward, img)
         reward = xystoreandcheck(x, y, reward)
         agent.observe(reward=reward, terminal=False)
