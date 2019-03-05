@@ -41,7 +41,6 @@ def smart_rewarder_build():
         states = dict(type='float', #Int may be more appropriate...
                       shape=(screen_size()[1], screen_size()[0])),
         actions = dict(type = 'int', num_actions=11), # -5...10
-        network=network,
-        action_exploration = tensorforce.core.exploration.
+        network=network
         )
     return agent
