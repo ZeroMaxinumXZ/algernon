@@ -3,3 +3,4 @@ tensorforce
 pyautogui
 pyscreenshot
 pillow
+kerasSetting up libtk8.6:amd64 (8.6.8-4) ...
