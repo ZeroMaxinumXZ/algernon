@@ -1,21 +1,7 @@
-# reinfinity-mouse
-Mixed unsupervised-reinforcement learning using TensorForce and RL-techniques to control mouse movements.
+# Welcome! I'm Albert, the curious mouse pointer...
+Introducing Albert, an experiment in reinforcement learning to show how a mouse pointer can be curious. No rewards needed!
 
-# Dependencies
-TensorFlow
-
-TensorForce 
-
-pyAutoGUI
-
-Pillow
-
-pyScreenshot (as a replacement to Pillow's ImageGrab for Linux)
-
-# Instructions
-Set screen resolution to 1920x1080.
-
-Run start.py (Preferably in a terminal application on a desktop.)
-
-# Tested on:
-Ubuntu 18.04 with Cinnamon Desktop
+# Installation:
+'''
+#cd into the directory requirements.txt...
+'''
