@@ -3,5 +3,10 @@ Introducing Albert, an experiment in reinforcement learning to show how a mouse 
 
 # Installation:
 ```
-#cd into the directory requirements.txt...
+#cd into the directory that requirements.txt is in...
+pip3 install -r requirements.txt
 ```
+
+# Warnings
+GPU needed!
+Set screen resolution to 1080p.
