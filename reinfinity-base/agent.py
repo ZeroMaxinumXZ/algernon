@@ -2,7 +2,7 @@ from utils import *
 from actions import *
 
 import tensorforce
-from tensorforce.agents import DQNAgent as DQN
+from tensorforce.agents import PPOAgent as DQN
 from time import sleep as wait
 from os import getcwd
 from os.path import join
@@ -42,5 +42,6 @@ def smart_rewarder_build():
                       shape=(screen_size()[1], screen_size()[0])),
         actions = dict(type = 'int', num_actions=11), # -5...10
         network=network
+        #actions_exploration = tensorforce.core.explorations.EpsilonDecay
         )
     return agent

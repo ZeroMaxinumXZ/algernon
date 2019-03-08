@@ -28,11 +28,11 @@ def xystoreandcheck(x, y, reward):
     global mouseY
     mouseY.append(y)
     try:
-        if mouseX[0] == mouseX[1] or mouseX[2] == mouseX[0]:
-            reward += -2.00
+        if mouseX[-1] == mouseX[-2] or mouseX[-3] == mouseX[-1]:
+            reward += -5.00
             print("Actor reward is now " + str(reward) + " due to agent failing to move mouse pointer in X coords.")
-        if mouseY[0] == mouseY[1] or mouseY[2] == mouseY[0]:
-            reward += -2.00
+        if mouseY[-1] == mouseY[-2] or mouseY[-3] == mouseY[-1]:
+            reward += -5.00
             print("Actor reward is now " + str(reward) + " due to agent failing to move mouse pointer in Y coord.")
         del mouseX[:-4]
         del mouseY[:-4]
