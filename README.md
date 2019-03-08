@@ -3,12 +3,12 @@ Introducing Algernon, an experiment in reinforcement learning to show how a mous
 
 # Installation:
 ```
-#cd into the directory that requirements.txt is in...
-pip3 install -r requirements.txt
+#download and clone this project, and cd into the directory that has been created as a result...
+pip3 install -r dependencies.txt
 ```
 # Instructions
 1. Download the repository and open the folder 'algernon' within the repository.
-2. Run start.py in the folder.
+2. Run start.py in the next directory.
 
 # Warnings
 GPU needed!
