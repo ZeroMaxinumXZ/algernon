@@ -1,6 +1,6 @@
 from pyautogui import click
 from pyautogui import moveTo
-from pyautogui import position
+from pyautogui import position, press
 
 def bounds(action, bound1, bound2):
     if action >= bound1 and action <= bound2:
@@ -8,7 +8,7 @@ def bounds(action, bound1, bound2):
     else:
          return False
 
-def actionizer(act_click, act_vert, act_horiz, reward = 0, prev_x = None, prev_y = None):
+def actionizer(act_click, act_vert, act_horiz, act_type, reward = 0, prev_x = None, prev_y = None):
     if act_click <= 1000:
         #reward += 0.01
         click()
@@ -26,12 +26,22 @@ def actionizer(act_click, act_vert, act_horiz, reward = 0, prev_x = None, prev_y
         #reward = -1
         x = None
         fakex = -1
-
+    if act_type <= 333:
+        press('command')
+    elif act_type <= 666:
+        press('up')
+    elif act_type <= 999:
+        press('left')
+    elif act_type <= 1332:
+        press('right')
+    elif act_type <= 1665:
+        press('down')
+    elif act_type <= 2000:
+        pass
     y = act_vert // 2
     print("Agent will move to y: " + str(y))
     fakey = y
 
     moveTo(x, y, 1)
-    return reward, fakex, fakey
-
+    return fakex, fakey
 
