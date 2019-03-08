@@ -1,15 +1,15 @@
 import pyscreenshot as screen
 from PIL import Image
 import numpy as np
-import pytesseract
 from time import sleep
 import json
+from pyautogui import size
 
 mouseX = []
 mouseY = []
 
 def screen_size():
-    return 192, 108
+    return size()[0] // 10, size()[1] // 10
 
 def get_screen_text():
     img = screen.grab()
