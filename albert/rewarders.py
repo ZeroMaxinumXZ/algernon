@@ -22,5 +22,3 @@ def curiousity_rewarder(action1, action2, action3, action4, model, rewards=0.0):
     loss = history.history['loss'][0]
     rewards = (loss * .01)
     return rewards
-
- 
