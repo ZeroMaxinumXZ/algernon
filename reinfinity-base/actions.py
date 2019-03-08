@@ -44,4 +44,3 @@ def actionizer(act_click, act_vert, act_horiz, act_type, reward = 0, prev_x = No
 
     moveTo(x, y, 1)
     return fakex, fakey
-
