@@ -2,7 +2,7 @@ from utils import *
 from actions import *
 
 import tensorforce
-from tensorforce.agents import PPOAgent as DQN
+from tensorforce.agents import DQNAgent as DQN
 from time import sleep as wait
 from os import getcwd
 from os.path import join
@@ -16,8 +16,8 @@ def agent_build():
         network = [
             #dict(type='conv1d', size=256, window=1, stride=1),  
             dict(type='flatten'),
-            dict(type='dense', size=1024, activation='swish'),
-            dict(type='dense', size=1024, activation='swish')
+            dict(type='dense', size=256, activation='swish'),
+            dict(type='dense', size=256, activation='swish')
             ]
 
         print("Creating agent.")
@@ -42,6 +42,5 @@ def smart_rewarder_build():
                       shape=(screen_size()[1], screen_size()[0])),
         actions = dict(type = 'int', num_actions=11), # -5...10
         network=network
-        #actions_exploration = tensorforce.core.explorations.EpsilonDecay
         )
     return agent
