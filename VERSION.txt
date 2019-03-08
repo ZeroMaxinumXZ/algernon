@@ -6,3 +6,7 @@ v1.0.2:
 Added a Tensorforce action exploration to Rewarder. (50%. right now code will result in error if try to run...)
 More coherent file structure.
 Fixed xystoreandcheck function in utils file.
+
+v1.1
+Created curiousity engine, using deep dense neural nets.
+Changed name to Albert.
