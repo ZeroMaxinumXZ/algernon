@@ -1,6 +1,6 @@
-﻿ReInfinity: Actor-Rewarder Pairing
+Algernon -- The curious mouse pointer.
 
-This is a documentation detailing changes to the ReInfinity repository starting from v1.0.2…
+This is a documentation detailing changes to the Algernon repository starting from v1.0.2…
 
 v1.0.2:
 Added a Tensorforce action exploration to Rewarder. (50%. right now code will result in error if try to run...)
