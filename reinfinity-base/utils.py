@@ -22,6 +22,7 @@ def get_screen():
     img = np.array(img)
     return img
 
+#TODO: Remove func.
 def xystoreandcheck(x, y, reward):
     global mouseX
     mouseX.append(x)
