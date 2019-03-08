@@ -28,7 +28,9 @@ def actionizer(act_click, act_vert, act_horiz, act_type, reward = 0, prev_x = No
         #reward = -1
         x = None
         fakex = -1
-        
+    
+    y = act_vert // 2
+    
     screen_type_act_num = act_screen_size()[1] // 6
     if act_type <= screen_h:
         press('command')
@@ -42,7 +44,6 @@ def actionizer(act_click, act_vert, act_horiz, act_type, reward = 0, prev_x = No
         press('down')
     elif act_type <= screen_h * 6:
         pass
-    y = act_vert // 2
     print("Agent will move to y: " + str(y))
     fakey = y
 
