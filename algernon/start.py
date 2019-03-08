@@ -12,7 +12,7 @@ def main_loop(agent):
     timer = 30
     
     print("Control-C to quit.")
-    print("This is Albert, an experimental reinforcement-learning AI that controls mouse input.")
+    print("This is Algernon, an experimental reinforcement-learning AI that controls mouse input.")
     print("Instructions for quitting: \nForce the mouse to the top-left corner of the screen, or just tap Control-C on your keyboard.")
     print("Timer in case you want to quit this program: ")
     while timer != 0:
