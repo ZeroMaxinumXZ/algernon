@@ -13,4 +13,4 @@ pip3 install -r requirements.txt
 # Warnings
 GPU needed!
 Set screen resolution to 1080p.
-
+Experimental dynamic screen resolution setting now available.
