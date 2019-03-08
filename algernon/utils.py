@@ -11,6 +11,9 @@ mouseY = []
 def screen_size():
     return size()[0] // 10, size()[1] // 10
 
+def act_screen_size():
+    return size()
+
 def get_screen_text():
     img = screen.grab()
     return pytesseract.image_to_string(img)
