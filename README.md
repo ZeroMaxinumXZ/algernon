@@ -1,5 +1,5 @@
-# Welcome! I'm Albert, the curious mouse pointer...
-Introducing Albert, an experiment in reinforcement learning to show how a mouse pointer can be curious. No extrinsic motivation needed!
+# Welcome! I'm Algernon, the curious mouse pointer...
+Introducing Algernon, an experiment in reinforcement learning to show how a mouse pointer can be curious. No extrinsic motivation needed!
 
 # Installation:
 ```
