@@ -7,6 +7,7 @@ from time import sleep as wait
 from os import getcwd
 from os.path import join
 from tensorforce.agents import Agent
+from math import ceil
 
 def agent_build():
     #try:
@@ -24,13 +25,14 @@ def agent_build():
         agent = DQN(
             states=dict(type='float', #Int may be more appropriate...
                         shape=(screen_size()[1], screen_size()[0])),
-            actions=dict(type='int', num_actions=2000),
+            actions=dict(type='int', num_actions=ceil(act_screen_size()),
             network=network,
             update_mode = dict(units='episodes', batch_size=1, frequency=1),
             batching_capacity = 32
         )
     return agent
 
+#TODO: Remove func.
 def smart_rewarder_build():
     network = [
         dict(type='flatten'),
