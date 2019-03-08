@@ -10,3 +10,8 @@ Fixed xystoreandcheck function in utils file.
 v1.1
 Created curiousity engine, using deep dense neural nets.
 Changed name to Albert.
+
+v1.1.1
+Changed name to Algernon.
+Dynamic screen resolution now available.
+Bugs squashed, no mice were harmed in the squashing. (At least I don't think so...)
