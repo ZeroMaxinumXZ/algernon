@@ -1,0 +1,2 @@
+This folder is for the curiosity engine model.
+This file in folder is so that GitHub doesn't freak out when trying to create an empty folder.
