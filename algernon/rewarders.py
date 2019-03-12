@@ -9,9 +9,9 @@ from keras.layers import Dense, Flatten
 def model_build():
     model = Sequential()
     model.add(Flatten())
-    model.add(Dense(256 * 20, activation='sigmoid'))
-    model.add(Dense(256 * 10, activation='relu'))
     model.add(Dense(256 * 5, activation='sigmoid'))
+    model.add(Dense(256 * 3, activation='relu'))
+    model.add(Dense(256 * 2, activation='sigmoid'))
     model.add(Dense(256 * 1, activation='sigmoid'))
     model.add(Dense(4))
     return model

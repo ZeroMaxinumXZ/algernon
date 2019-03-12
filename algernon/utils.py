@@ -4,12 +4,16 @@ import numpy as np
 from time import sleep
 import json
 from pyautogui import size
+from os import system
 
 mouseX = []
 mouseY = []
 
+def clear():
+    system("clear")
+    
 def screen_size():
-    return size()[0] // 10, size()[1] // 10
+    return size()[0] // 4, size()[1] // 4
 
 def act_screen_size():
     return size()
