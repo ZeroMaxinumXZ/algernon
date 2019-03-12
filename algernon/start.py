@@ -2,7 +2,14 @@ from agent import *
 from utils import *
 from rewarders import *
 from os import system
-curiousity_engine = model_build()
+
+if False: 
+    curiousity_engine = keras.models.load_model(join(getcwd(), "curiousity_engine_models", 'model.h5'))
+    print("Curiousity engine model loaded successfully.")
+if True:
+    print("Building curiousity engine.") 
+    curiousity_engine = model_build()
+
 curiousity_engine.compile(optimizer = 'adam', loss='mean_squared_logarithmic_error')
 
 
@@ -20,6 +27,7 @@ def main_loop(agent):
         wait(1)
         timer -= 1
     print("Entering main agent loop")
+    acc  = 0
     while True:
         img = get_screen()
         #text = get_screen_text()
@@ -32,7 +40,14 @@ def main_loop(agent):
         #rwward = object_rewarder(reward, img)
         #reward = xystoreandcheck(x, y, reward)
         agent.observe(reward=reward, terminal=False)
-        #agent.save_model(join(getcwd(), "models", "model"))
+
+        acc += 1
+        if acc == 20: 
+            acc = 0 
+            print("Saving...")
+            agent.save_model(join(getcwd(), "models", "model"), append_timestep=False)
+            curiousity_engine.save(join(getcwd(), "curiousity_engine_models", 'model.h5'))
+
 
 agent = agent_build()
 main_loop(agent)
