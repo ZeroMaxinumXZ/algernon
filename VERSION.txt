@@ -15,3 +15,8 @@ v1.1.1
 Changed name to Algernon.
 Dynamic screen resolution now available.
 Bugs squashed, no mice were harmed in the squashing. (At least I don't think so...)
+
+v1.2
+Agent Mouse can now access the keyboard.
+Added ability to save and restore models... Curiosity engine and agent.
+Included action exploration.
