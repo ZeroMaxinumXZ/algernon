@@ -3,10 +3,10 @@ from utils import *
 from rewarders import *
 from os import system
 
-if user_input == 'use': 
+if False: 
     curiousity_engine = keras.models.load_model(join(getcwd(), "curiousity_engine_models", 'model.h5'))
     print("Curiousity engine model loaded successfully.")
-if user_input == 'create':
+if True:
     print("Building curiousity engine.") 
     curiousity_engine = model_build()
 

@@ -2,7 +2,7 @@ from utils import *
 from actions import *
 
 import tensorforce
-from tensorforce.agents import PPOAgent as DQN
+from tensorforce.agents import DQNAgent as DQN
 from time import sleep as wait
 from os import getcwd
 from os.path import join
@@ -19,11 +19,11 @@ def agent_build():
         wait(1)
         clear()
         network = [
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
             dict(type='flatten'),
             dict(type='dense', size=32, activation='swish')
             #dict(type='dense', size=16, activation='swish'),
@@ -39,16 +39,17 @@ def agent_build():
         )
         agent.restore_model(join(getcwd(), "models"))
         print("Agent loaded successfully...")
+
     if user_input == 'create':
         print('Creating model.')
         wait(1)
         clear()
         network = [
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
-            dict(type='conv1d', size=64, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
+            dict(type='conv1d', size=128, activation='swish'),
             dict(type='flatten'),
             dict(type='dense', size=32, activation='swish')
             #dict(type='dense', size=16, activation='swish'),
