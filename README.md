@@ -14,3 +14,6 @@ pip3 install -r dependencies.txt
 GPU needed!
 Set screen resolution to 1080p.
 Experimental dynamic screen resolution setting now available. Please take precaution.
+
+# Decision
+In my best interest, Algernon v2.0 will be closed-source, and will continue to be closed-source until it is ready. Thank you.
